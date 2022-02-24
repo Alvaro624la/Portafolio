@@ -164,12 +164,9 @@
       list-style: none;
 
       &__nombre{
-        
-        /*por probar con pseudo-elementos de contenido*/
-        // &::before{
-        //   content: "⚉";
-        //   font-size: 1.75em;
-        // }
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -16px;
 
         &--negrita{
           font-weight: bold;
@@ -187,6 +184,11 @@
         &:visited{
           color: purple;
         }
+      }
+      &__ciudad{
+        display: flex;
+        flex-direction: row;
+        margin-bottom: -16px;
       }
       &__email__link{
         color: black;

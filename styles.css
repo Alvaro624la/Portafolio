@@ -250,7 +250,14 @@
 }
 
 .modal-yo__content__datos__nombre {
-  /*por probar con pseudo-elementos de contenido*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: -16px;
 }
 
 .modal-yo__content__datos__nombre--negrita {
@@ -271,6 +278,17 @@
 
 .modal-yo__content__datos__telefono__link:visited {
   color: purple;
+}
+
+.modal-yo__content__datos__ciudad {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: -16px;
 }
 
 .modal-yo__content__datos__email__link {
