@@ -1,0 +1,96 @@
+/*HEADER*/
+@mixin p-btns{
+    width: 150px;
+    height: 40px;
+    background: $red;
+    border: 0px black solid;
+    margin: 0px 20px;
+    font-family: 'Josefin Slab', serif, Helvetica, Arial;
+    font-size: 1.25em;
+    font-weight: 600;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0 5px #666;
+    transition: 0.2s;
+}
+
+/*HABILIDADES*/
+@mixin forma(){
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    background-color: orange;
+    width: 60px;
+    height: 60px;
+    transform: rotate(45deg);
+    border: 1px solid black;
+    z-index: 0;
+}
+@mixin forma-vuelta(){
+    animation:{
+        name: vuelta;
+        duration: 0.5s;
+        iteration-count: 1;
+        timing-function: ease;
+    }
+}
+@mixin forma-text(){
+    cursor: default;
+    transform: rotate(-45deg);
+    padding: 20px;
+    display: flex;
+    place-items: center;
+    place-content: center;
+    font-weight: 600;
+    font-style: italic;
+}
+@mixin div1(){
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border: 2px rgb(17, 204, 0) dashed;
+    border-radius: 10px;
+    font-weight: bold;    
+
+    &__text{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;    
+    }
+}
+@mixin div2(){
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    place-content: center;
+    place-items: center;
+    position: relative;
+}
+@mixin item(){
+    margin-left: 20px;
+    padding: 10px;
+    border-radius: 50%;
+    background: linear-gradient(0deg, rgba(18, 255, 49, 0.836), rgb(18, 202, 1));
+
+    &:after{
+        content: "✔";
+    }
+    &:hover{
+        &:after{
+            color: rgb(0, 134, 0);
+        }
+    }
+}
+@mixin bar(){
+    width: 60px;
+    height: 10px;
+    border: 1px solid black;
+    border-radius: 20px;
+    z-index: 0;
+}
+@mixin bar-color(){
+    background-color: green;
+    height: 100%;
+    z-index: 0;
+}
