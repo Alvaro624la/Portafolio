@@ -808,7 +808,7 @@
     }
 
     &__dev{
-      top: 50px;
+      top: 70px;
       right: 20px;
     }
 
@@ -818,7 +818,10 @@
 
       &__div1{
         padding: 10px;
-      }               
+      }
+      &__div2{
+        margin-right: 40px;
+      }    
     }
     &__css{
       padding: 20px 0px;

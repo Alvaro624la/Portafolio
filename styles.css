@@ -525,13 +525,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  place-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   place-items: center;
   position: relative;
+  margin: 10px;
 }
 
 .habilidades__html__div2__item {
-  margin-left: 20px;
+  margin: 0px 20px 10px 0px;
   padding: 10px;
   border-radius: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(18, 255, 49, 0.836)), to(#12ca01));
@@ -636,13 +638,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  place-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   place-items: center;
   position: relative;
+  margin: 10px;
 }
 
 .habilidades__css__div2__item {
-  margin-left: 20px;
+  margin: 0px 20px 10px 0px;
   padding: 10px;
   border-radius: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(18, 255, 49, 0.836)), to(#12ca01));
@@ -747,13 +751,15 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  place-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   place-items: center;
   position: relative;
+  margin: 10px;
 }
 
 .habilidades__js__div2__item {
-  margin-left: 20px;
+  margin: 0px 20px 10px 0px;
   padding: 10px;
   border-radius: 50%;
   background: -webkit-gradient(linear, left bottom, left top, from(rgba(18, 255, 49, 0.836)), to(#12ca01));
@@ -1350,7 +1356,7 @@
     padding-top: 0px;
   }
   .habilidades__dev {
-    top: 50px;
+    top: 70px;
     right: 20px;
   }
   .habilidades__html {
@@ -1359,6 +1365,9 @@
   }
   .habilidades__html__div1 {
     padding: 10px;
+  }
+  .habilidades__html__div2 {
+    margin-right: 40px;
   }
   .habilidades__css {
     padding: 20px 0px;
