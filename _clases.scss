@@ -77,10 +77,15 @@
         content: "✔";
     }
     &:hover{
+        animation:{
+            name: swing;
+            duration: 0.5s;
+        }
         &:after{
             color: rgb(0, 134, 0);
         }
     }
+    
 }
 @mixin bar(){
     width: 60px;
@@ -93,4 +98,14 @@
     background-color: green;
     height: 100%;
     z-index: 0;
+    &:hover{
+        animation:{
+            name: resaltar;
+            duration: .3s;
+            iteration-count: 2;
+        }
+        @keyframes resaltar {
+            50%{background-color: rgb(85, 141, 85);}
+        }
+    }
 }

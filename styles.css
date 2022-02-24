@@ -12,13 +12,15 @@
 
 /*BODY*/
 .body {
+  overflow-x: hidden;
+  background-color: black;
   font-family: 'Josefin Slab', serif, Helvetica, Arial;
 }
 
 /*HEADER*/
 .header {
   position: relative;
-  background-color: white;
+  background-color: black;
   background-image: url("/src/img/headerbg10.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -29,12 +31,38 @@
   display: grid;
   place-content: center;
   place-items: center;
+  -webkit-animation-name: fadeIn-manual;
+          animation-name: fadeIn-manual;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
+}
+
+@-webkit-keyframes fadeIn-manual {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn-manual {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
 .header__title {
   font-size: 3em;
   font-family: 'Poiret One', cursive, Helvetica, Arial, sans-serif;
   margin-bottom: 60px;
+  -webkit-animation-name: backInDown;
+          animation-name: backInDown;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .header__p-btns {
@@ -66,6 +94,10 @@
   transition: 0.2s;
   cursor: pointer;
   font-size: 1.25em;
+  -webkit-animation-name: bounceInLeft;
+          animation-name: bounceInLeft;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .header__p-btns__proyectos:hover {
@@ -97,6 +129,10 @@
   transition: 0.2s;
   cursor: pointer;
   font-size: 1.25em;
+  -webkit-animation-name: bounceInRight;
+          animation-name: bounceInRight;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
 }
 
 .header__p-btns__cv:hover {
@@ -131,6 +167,10 @@
   cursor: pointer;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  -webkit-animation-name: zoomIn;
+          animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
 }
 
 .header__s-btns__yo:hover {
@@ -455,6 +495,27 @@
   width: 70%;
 }
 
+.habilidades__html__div1__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .habilidades__html__div2 {
   font-weight: bold;
   display: -webkit-box;
@@ -479,6 +540,13 @@
 
 .habilidades__html__div2__item:after {
   content: "✔";
+}
+
+.habilidades__html__div2__item:hover {
+  -webkit-animation-name: swing;
+          animation-name: swing;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .habilidades__html__div2__item:hover:after {
@@ -544,6 +612,21 @@
   width: 60%;
 }
 
+.habilidades__css__div1__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .habilidades__css__div2 {
   font-weight: bold;
   display: -webkit-box;
@@ -568,6 +651,13 @@
 
 .habilidades__css__div2__item:after {
   content: "✔";
+}
+
+.habilidades__css__div2__item:hover {
+  -webkit-animation-name: swing;
+          animation-name: swing;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .habilidades__css__div2__item:hover:after {
@@ -633,6 +723,21 @@
   width: 30%;
 }
 
+.habilidades__js__div1__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .habilidades__js__div2 {
   font-weight: bold;
   display: -webkit-box;
@@ -657,6 +762,13 @@
 
 .habilidades__js__div2__item:after {
   content: "✔";
+}
+
+.habilidades__js__div2__item:hover {
+  -webkit-animation-name: swing;
+          animation-name: swing;
+  -webkit-animation-duration: 0.5s;
+          animation-duration: 0.5s;
 }
 
 .habilidades__js__div2__item:hover:after {
@@ -801,6 +913,21 @@
   width: 100%;
 }
 
+.mas__idiomas__castellano__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .mas__idiomas__catalan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -828,6 +955,21 @@
   width: 100%;
 }
 
+.mas__idiomas__catalan__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .mas__idiomas__ingles {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -853,6 +995,21 @@
   height: 100%;
   z-index: 0;
   width: 50%;
+}
+
+.mas__idiomas__ingles__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
 }
 
 .mas__programas {
@@ -886,6 +1043,21 @@
   width: 40%;
 }
 
+.mas__programas__photoshop__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .mas__programas__premiere {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -913,6 +1085,21 @@
   width: 30%;
 }
 
+.mas__programas__premiere__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+
 .mas__programas__illustrator {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -938,6 +1125,21 @@
   height: 100%;
   z-index: 0;
   width: 15%;
+}
+
+.mas__programas__illustrator__bar__color:hover {
+  -webkit-animation-name: resaltar;
+          animation-name: resaltar;
+  -webkit-animation-duration: .3s;
+          animation-duration: .3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
 }
 
 .mas-grid {
