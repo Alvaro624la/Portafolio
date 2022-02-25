@@ -169,9 +169,6 @@ $RECYCLE.BIN/
 *.lnk
 
 # node_modules
-.node_modules
-.build
-./node_modules
 /node_modules
 
 # End of https://www.toptal.com/developers/gitignore/api/windows,node
