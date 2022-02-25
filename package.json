@@ -8,6 +8,7 @@
     "webpack-cli": "^4.9.2"
   },
   "scripts": {
+    "build-sass": "sass ./styles.scss ./styles.css --watch",
     "build": "webpack --watch",
     "build-babel": "babel src -d output --watch"
   }
