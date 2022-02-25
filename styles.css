@@ -1166,6 +1166,48 @@
   }
 }
 
+.mas__descargar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  place-content: center;
+}
+
+.mas__descargar__cv {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  width: 165px;
+  height: 45px;
+  background: #ff3030;
+  margin: 0px 20px;
+  font-family: 'Josefin Slab', serif, Helvetica, Arial;
+  font-size: 1.25em;
+  font-weight: 600;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px #666;
+          box-shadow: 0 5px #666;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.mas__descargar__cv:hover {
+  color: white;
+  cursor: pointer;
+  background: -webkit-gradient(linear, left bottom, left top, from(#ff3030), to(#ff7676));
+  background: linear-gradient(0deg, #ff3030, #ff7676);
+}
+
+.mas__descargar__cv:hover:active {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+  -webkit-box-shadow: 0 3px #666;
+          box-shadow: 0 3px #666;
+}
+
 .mas-grid {
   display: -ms-grid;
   display: grid;
