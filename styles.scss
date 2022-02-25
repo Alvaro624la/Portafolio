@@ -23,7 +23,7 @@
     size: cover;
     repeat: no-repeat;
     attachment: fixed;
-  }  
+  }
   width: 100%;
   height: 100vh;
   display: grid;
@@ -144,6 +144,8 @@
     transform: translate(-50%, -50%);
     padding: 1.5em;
     background-color: white;
+    background-image: url('/src/img/modalbg1.jpg');
+    // filter: brightness(1.1);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -154,6 +156,8 @@
       height: 170px;
       border-radius: 15px;
       margin: 15px;
+      box-shadow: 6px 6px 16px 0px black;
+      // border: 1px dashed grey;
     } // foto => 180px ancho.
     &__datos{
       width: auto;
