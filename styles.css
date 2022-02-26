@@ -555,12 +555,13 @@
 }
 
 .mas {
-  background-color: black;
+  background-color: white;
   background-image: url("/src/img/headerbg8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-blend-mode: difference;
+  color: black;
   color: white;
   height: 100%;
   position: relative;

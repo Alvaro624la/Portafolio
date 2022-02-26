@@ -428,13 +428,14 @@
 }
 .mas{
   background:{
-    color: black;
+    color: white;
     image: url('/src/img/headerbg8.jpg');
     size: cover;
     repeat: no-repeat;
     attachment: fixed;
     blend-mode: difference;
   }
+  color: black; //fallback
   color: white;
   height: 100%;
   position: relative;
