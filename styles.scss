@@ -970,17 +970,25 @@
 
 /*header horizontal boton modal*/
 @media (max-height: 560px) {
-  .header__s-btns{
-    position: static;
-    padding: 25px;
-    transform: translate(-0%, 0%);
+  .header{
+    height: 100%;
+
+    &__s-btns{
+      position: static;
+      padding: 25px;
+      transform: translate(-0%, 0%);
+    }
   }
 }
 
 /*personal links static header horizontal*/
 @media (max-height: 500px) {
-  .header__personal-links{
-    position: static;
-    transform: translate(-0%, 0%);
+  .header{
+    height: 100%;
+
+    &__personal-links{
+      position: static;
+      transform: translate(-0%, 0%);
+    }
   }
 }
