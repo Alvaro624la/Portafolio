@@ -53,6 +53,14 @@
                 <input class="header__s-btns__yo" type="button" value="Contacto">
             </a>
         </div>
+        <div class="header__personal-links">
+            <a class="header__personal-links__linkedin" href="https://www.linkedin.com/in/%C3%A1lvaro-de-prado-calle-740062221/" target="_blank">
+               <img class="header__personal-links__linkedin__img" src="./src/img/linkedin.svg">
+            </a>
+            <a class="header__personal-links__github" href="https://github.com/Alvaro624la" target="_blank">
+                <img class="header__personal-links__github__img" src="./src/img/github.svg">
+            </a>
+        </div>
     </header>
     <!--Ventana modal/pop up only CSS (btn YO)-->
     <div id="yo" class="modal-yo">
@@ -82,7 +90,13 @@
                 </li>
             </ul>
             <div class="modal-yo__content__descripcion">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt repellendus in iure, vel reiciendis sed cum magni nostrum, ratione illo provident tempore placeat quam animi. Voluptatem similique excepturi labore mollitia?</p>
+                <p>
+                    Disponibilidad para trabajar en remoto, con 1GB de fibra.
+                    <br>
+                    Disponibilidad para trabajar en cualquier zona de Barcelona y afueras.
+                    <br>
+                    Disponibilidad horaria muy amplia.
+                </p>
             </div>
         </div>
     </div>
@@ -174,7 +188,8 @@
         <section class="mas__datos">
             <p class="mas__datos__biografia">
                 <strong>Biografia:</strong>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nostrum maiores eos quibusdam reprehenderit nulla a voluptatibus commodi soluta voluptate in, quae itaque quam ut ad eveniet quia amet quaerat deleniti.</p>
+                Un año cursando OpenBootcamp, obteniendo certificaciones de HTML, CSS y JS, a parte de seguir formándome 5/7 días por semana desde el 23 de Agosto del 2021 y haciendo proyectos front-end.
+            </p>
             <ul class="mas__datos__ul">
                 <li type="circle" class="mas__datos__ul__li">1GB fibra óptica</li>
                 <li type="circle"  class="mas__datos__ul__li">Vehiculo propio</li>
@@ -231,52 +246,60 @@
         </section> 
     </article>
     <!--PROYECTOS-->
-    <h2 id="proyectos" class="proyectos-titulo">PROYECTOS</h2>
-    <article class="proyectos">
-        <!--BOOTSTRAP CARDS-->
-        <section class="proyectos__item card">
-            <img class="proyectos__item__1 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
-            <div class="card-body">
-                <p class="card-text">Encuesta Reaktion</p>
-              </div>
-            </div>
-        </section>
-        <section class="proyectos__item card">
-            <img class="proyectos__item__2 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
-            <div class="card-body">
-                <p class="card-text">Encuesta Reaktion</p>
-              </div>
-            </div>
-        </section>
-        <section class="proyectos__item card">
-            <img class="proyectos__item__3 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
-            <div class="card-body">
-                <p class="card-text">Encuesta Reaktion</p>
-              </div>
-            </div>
-        </section>
-        <section class="proyectos__item card">
-            <img class="proyectos__item__4 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
-            <div class="card-body">
-                <p class="card-text">Encuesta Reaktion</p>
-              </div>
-            </div>
-        </section>
-        <section class="proyectos__item card">
-            <img class="proyectos__item__5 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
-            <div class="card-body">
-                <p class="card-text">Encuesta Reaktion</p>
-              </div>
-            </div>
-        </section>
-        <section class="proyectos__item card">
-            <img class="proyectos__item__6 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
-            <div class="card-body">
-                <p class="card-text">Encuesta Reaktion</p>
-              </div>
-            </div>
-        </section>
-    </article>
+    <div id="proyectos" class="proyectos">
+        <h2 class="proyectos__titulo">PROYECTOS</h2>
+        <article class="proyectos__grid">
+            <!--BOOTSTRAP CARDS-->
+            <section class="proyectos__grid__item card">
+                <a target="_blank" href="https://codepen.io/alvaro624la/full/ExbaWzY">
+                    <img class="proyectos__grid__item__6 card-img-top" src="./src/img/proyecto1.PNG" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">JavaScript 99%</p>
+                    </div>
+                </a>
+            </section>
+            <section class="proyectos__grid__item card">
+                <a target="_blank" href="https://codepen.io/alvaro624la/full/GRMPMyx">
+                    <img class="proyectos__grid__item__6 card-img-top" src="./src/img/proyecto2.PNG" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">Reloj JS</p>
+                    </div>
+                </a>
+            </section>
+            <section class="proyectos__grid__item card">
+                <a target="_blank" href="https://codepen.io/alvaro624la/full/zYEaRbe">
+                    <img class="proyectos__grid__item__6 card-img-top" src="./src/img/proyecto3.PNG" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">1r proyecto JS</p>
+                    </div>
+                </a>
+            </section>
+            <section class="proyectos__grid__item card">
+                <a target="_blank" href="https://codepen.io/alvaro624la/full/qBjwbJW">
+                    <img class="proyectos__grid__item__6 card-img-top" src="./src/img/proyecto4.PNG" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">Encuesta</p>
+                    </div>
+                </a>
+            </section>
+            <section class="proyectos__grid__item card">
+                <a target="_blank" href="https://codepen.io/alvaro624la/full/YzQJqBP">
+                    <img class="proyectos__grid__item__6 card-img-top" src="./src/img/proyecto5.PNG" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">Página tributo</p>
+                    </div>
+                </a>
+            </section>
+            <section class="proyectos__grid__item card">
+                <a target="_blank" href="https://codepen.io/alvaro624la/full/MWobaWp">
+                    <img class="proyectos__grid__item__6 card-img-top" src="./src/img/proyecto6.PNG" loading="lazy">
+                    <div class="card-body">
+                        <p class="card-text">Primer proyecto</p>
+                    </div>
+                </a>
+            </section>
+        </article>
+    </div>
     </main>
     
     <script src="bundle.js"></script>
