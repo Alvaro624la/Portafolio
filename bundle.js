@@ -16,7 +16,7 @@
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_bootstrap2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/bootstrap2 */ \"./src/modulos/bootstrap2.js\");\n/* harmony import */ var _modulos_bootstrap2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modulos_bootstrap2__WEBPACK_IMPORTED_MODULE_0__);\n// import './modulos/bootstrap1';\n // alert('hola');\n\n//# sourceURL=webpack:///./src/app.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _modulos_bootstrap2__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./modulos/bootstrap2 */ \"./src/modulos/bootstrap2.js\");\n/* harmony import */ var _modulos_bootstrap2__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_modulos_bootstrap2__WEBPACK_IMPORTED_MODULE_0__);\n // alert('hola');\n\n//# sourceURL=webpack:///./src/app.js?");
 
 /***/ }),
 
