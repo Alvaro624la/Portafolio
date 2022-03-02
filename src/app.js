@@ -1,3 +1,3 @@
-import './modulos/bootstrap2';
+import './modulos/bootstrap';
 
 // alert('hola');
