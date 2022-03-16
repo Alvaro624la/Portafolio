@@ -3706,7 +3706,7 @@
 .header {
   position: relative;
   background-color: black;
-  background-image: url("/src/img/headerbg10.png");
+  background-image: url("/src/img/headerbg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -3741,7 +3741,7 @@
 .header__p-btns__proyectos {
   width: 150px;
   height: 40px;
-  background: #ff3030;
+  background: #61714d;
   border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
@@ -3757,7 +3757,7 @@
   animation-duration: 2s;
 }
 .header__p-btns__proyectos:hover {
-  background: linear-gradient(0deg, #ff3030, #ff7676);
+  background: linear-gradient(0deg, #61714d, #cbdfac);
 }
 .header__p-btns__proyectos:active {
   transform: translateY(2px);
@@ -3766,7 +3766,7 @@
 .header__p-btns__cv {
   width: 150px;
   height: 40px;
-  background: #ff3030;
+  background: #61714d;
   border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
@@ -3782,7 +3782,7 @@
   animation-duration: 2s;
 }
 .header__p-btns__cv:hover {
-  background: linear-gradient(0deg, #ff3030, #ff7676);
+  background: linear-gradient(0deg, #61714d, #cbdfac);
 }
 .header__p-btns__cv:active {
   transform: translateY(2px);
@@ -4522,7 +4522,7 @@
   border: 1px solid white;
   width: 165px;
   height: 45px;
-  background: #ff3030;
+  background: #61714d;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
   font-size: 1.25em;
@@ -4534,7 +4534,7 @@
 .mas__descargar__cv:hover {
   color: white;
   cursor: pointer;
-  background: linear-gradient(0deg, #ff3030, #ff7676);
+  background: linear-gradient(0deg, #61714d, #cbdfac);
 }
 .mas__descargar__cv:hover:active {
   transform: translateY(2px);
