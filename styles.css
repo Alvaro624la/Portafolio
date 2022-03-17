@@ -3695,6 +3695,10 @@
   box-sizing: border-box;
 }
 
+::after, ::before {
+  box-sizing: border-box;
+}
+
 /*BODY*/
 .body {
   overflow-x: hidden;
@@ -3747,9 +3751,8 @@
   font-family: "Josefin Slab", serif, Helvetica, Arial;
   font-size: 1.25em;
   font-weight: 600;
-  border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px #8fae93;
   transition: 0.2s;
   cursor: pointer;
   font-size: 1.25em;
@@ -3757,7 +3760,7 @@
   animation-duration: 2s;
 }
 .header__p-btns__proyectos:hover {
-  background: linear-gradient(0deg, #61714d, #cbdfac);
+  background: linear-gradient(0deg, #61714d, #8fae93);
 }
 .header__p-btns__proyectos:active {
   transform: translateY(2px);
@@ -3772,9 +3775,8 @@
   font-family: "Josefin Slab", serif, Helvetica, Arial;
   font-size: 1.25em;
   font-weight: 600;
-  border: 1px solid black;
   border-radius: 5px;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px #8fae93;
   transition: 0.2s;
   cursor: pointer;
   font-size: 1.25em;
@@ -3782,7 +3784,7 @@
   animation-duration: 2s;
 }
 .header__p-btns__cv:hover {
-  background: linear-gradient(0deg, #61714d, #cbdfac);
+  background: linear-gradient(0deg, #61714d, #8fae93);
 }
 .header__p-btns__cv:active {
   transform: translateY(2px);
@@ -3796,23 +3798,24 @@
 .header__s-btns__yo {
   width: 100px;
   height: 100px;
-  background-color: rgba(255, 181, 181, 0.4);
+  background-color: rgba(97, 113, 77, 0.267);
   border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
   font-size: 1em;
   font-weight: 600;
-  border: 10px groove #ff3030;
+  border: 10px groove #61714d;
   border-radius: 50%;
   cursor: pointer;
   transition: all 0.5s;
+  color: black;
   animation-name: zoomIn;
   animation-duration: 1s;
 }
 .header__s-btns__yo:hover {
-  border: 16px groove #ff3030;
+  border: 16px groove #61714d;
   font-size: 1.1em;
-  background-color: #ff9a9a;
+  background-color: #8fae93;
   transition: all 0.5s;
 }
 .header__personal-links {
@@ -3826,7 +3829,7 @@
   transition: 0.1s;
 }
 .header__personal-links__linkedin__img:hover {
-  filter: drop-shadow(0px 0px 10px purple);
+  filter: drop-shadow(0px 0px 10px #61714d);
   transition: 0.2s;
 }
 .header__personal-links__github__img {
@@ -3835,7 +3838,7 @@
   transition: 0.1s;
 }
 .header__personal-links__github__img:hover {
-  filter: drop-shadow(0px 0px 10px purple);
+  filter: drop-shadow(0px 0px 10px #8fae93);
   transition: 0.2s;
 }
 
@@ -4004,12 +4007,13 @@
   top: 50px;
   right: 50px;
   background-color: orange;
+  background-color: #dfaf5e;
   width: 60px;
   height: 60px;
   transform: rotate(45deg);
   border: 1px solid black;
   z-index: 0;
-  top: 150px;
+  top: 75px;
   right: 100px;
 }
 .habilidades__dev:hover {
@@ -4033,42 +4037,54 @@
   font-weight: 600;
   font-style: italic;
 }
-.habilidades__html {
+.habilidades .accordion-container {
+  margin-top: 60px;
+  padding: 0px 100px;
+  width: auto;
+  height: 600px;
+}
+.habilidades .accordion-button {
+  display: flex;
+  justify-content: center;
+  border: #dfaf5e 1px solid;
+}
+.habilidades .accordion-button__p {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+}
+.habilidades .accordion-collapse, .habilidades .show {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
-  padding: 30px;
-  margin: 0px 50px;
+  background-color: rgba(223, 175, 93, 0.267);
 }
-.habilidades__html__div1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border: 2px #11cc00 dashed;
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 20px;
+.habilidades .accordion-button:focus {
+  border-color: rgba(223, 175, 93, 0.267);
+  box-shadow: 0 0 0 0.25rem rgba(223, 175, 93, 0.6);
 }
-.habilidades__html__div1__text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+.habilidades #flush-collapseOne, .habilidades #flush-collapseTwo, .habilidades #flush-collapseThree {
+  border: #dfaf5e 1px solid;
 }
-.habilidades__html__div1__bar {
+.habilidades .accordion-body__code {
+  font-size: 1em;
+  color: black;
+  word-wrap: break-word;
+}
+.habilidades .accordion-body__code__bar {
   width: 60px;
   height: 10px;
   border: 1px solid black;
   border-radius: 20px;
   z-index: 0;
+  margin-bottom: 30px;
 }
-.habilidades__html__div1__bar__color {
+.habilidades .accordion-body__code__bar__color--bem {
   background-color: green;
   height: 100%;
   z-index: 0;
-  width: 70%;
+  width: 75%;
 }
-.habilidades__html__div1__bar__color:hover {
+.habilidades .accordion-body__code__bar__color--bem:hover {
   animation-name: resaltar;
   animation-duration: 0.3s;
   animation-iteration-count: 2;
@@ -4078,67 +4094,13 @@
     background-color: #558d55;
   }
 }
-.habilidades__html__div2 {
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  place-items: center;
-  position: relative;
-  margin: 10px;
-}
-.habilidades__html__div2__item {
-  margin: 0px 20px 10px 0px;
-  padding: 10px;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgba(18, 255, 49, 0.836), #12ca01);
-}
-.habilidades__html__div2__item:after {
-  content: "✔";
-}
-.habilidades__html__div2__item:hover {
-  animation-name: swing;
-  animation-duration: 0.5s;
-}
-.habilidades__html__div2__item:hover:after {
-  color: #008600;
-}
-.habilidades__css {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 30px;
-  margin: 0px 50px;
-}
-.habilidades__css__div1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border: 2px #11cc00 dashed;
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 20px;
-}
-.habilidades__css__div1__text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.habilidades__css__div1__bar {
-  width: 60px;
-  height: 10px;
-  border: 1px solid black;
-  border-radius: 20px;
-  z-index: 0;
-}
-.habilidades__css__div1__bar__color {
+.habilidades .accordion-body__code__bar__color--sass {
   background-color: green;
   height: 100%;
   z-index: 0;
-  width: 60%;
+  width: 75%;
 }
-.habilidades__css__div1__bar__color:hover {
+.habilidades .accordion-body__code__bar__color--sass:hover {
   animation-name: resaltar;
   animation-duration: 0.3s;
   animation-iteration-count: 2;
@@ -4148,67 +4110,13 @@
     background-color: #558d55;
   }
 }
-.habilidades__css__div2 {
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  place-items: center;
-  position: relative;
-  margin: 10px;
-}
-.habilidades__css__div2__item {
-  margin: 0px 20px 10px 0px;
-  padding: 10px;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgba(18, 255, 49, 0.836), #12ca01);
-}
-.habilidades__css__div2__item:after {
-  content: "✔";
-}
-.habilidades__css__div2__item:hover {
-  animation-name: swing;
-  animation-duration: 0.5s;
-}
-.habilidades__css__div2__item:hover:after {
-  color: #008600;
-}
-.habilidades__js {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  padding: 30px;
-  margin: 0px 50px;
-}
-.habilidades__js__div1 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  border: 2px #11cc00 dashed;
-  border-radius: 10px;
-  font-weight: bold;
-  padding: 20px;
-}
-.habilidades__js__div1__text {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-.habilidades__js__div1__bar {
-  width: 60px;
-  height: 10px;
-  border: 1px solid black;
-  border-radius: 20px;
-  z-index: 0;
-}
-.habilidades__js__div1__bar__color {
+.habilidades .accordion-body__code__bar__color--bootstrap {
   background-color: green;
   height: 100%;
   z-index: 0;
-  width: 30%;
+  width: 25%;
 }
-.habilidades__js__div1__bar__color:hover {
+.habilidades .accordion-body__code__bar__color--bootstrap:hover {
   animation-name: resaltar;
   animation-duration: 0.3s;
   animation-iteration-count: 2;
@@ -4218,30 +4126,53 @@
     background-color: #558d55;
   }
 }
-.habilidades__js__div2 {
-  font-weight: bold;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  place-items: center;
-  position: relative;
-  margin: 10px;
+.habilidades .accordion-body__code__bar__color--animate {
+  background-color: green;
+  height: 100%;
+  z-index: 0;
+  width: 100%;
 }
-.habilidades__js__div2__item {
-  margin: 0px 20px 10px 0px;
-  padding: 10px;
-  border-radius: 50%;
-  background: linear-gradient(0deg, rgba(18, 255, 49, 0.836), #12ca01);
+.habilidades .accordion-body__code__bar__color--animate:hover {
+  animation-name: resaltar;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
 }
-.habilidades__js__div2__item:after {
-  content: "✔";
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
 }
-.habilidades__js__div2__item:hover {
-  animation-name: swing;
-  animation-duration: 0.5s;
+.habilidades .accordion-body__code__bar__color--babel {
+  background-color: green;
+  height: 100%;
+  z-index: 0;
+  width: 50%;
 }
-.habilidades__js__div2__item:hover:after {
-  color: #008600;
+.habilidades .accordion-body__code__bar__color--babel:hover {
+  animation-name: resaltar;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+.habilidades .accordion-body__code__bar__color--webpack {
+  background-color: green;
+  height: 100%;
+  z-index: 0;
+  width: 50%;
+}
+.habilidades .accordion-body__code__bar__color--webpack:hover {
+  animation-name: resaltar;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
 }
 .habilidades__certificaciones {
   background-color: rgba(187, 187, 187, 0.8);
@@ -4287,6 +4218,7 @@
   top: 50px;
   right: 50px;
   background-color: orange;
+  background-color: #dfaf5e;
   width: 60px;
   height: 60px;
   transform: rotate(45deg);
@@ -4519,7 +4451,6 @@
   place-content: center;
   color: white;
   text-decoration: none;
-  border: 1px solid white;
   width: 165px;
   height: 45px;
   background: #61714d;
@@ -4528,13 +4459,13 @@
   font-size: 1.25em;
   font-weight: 600;
   border-radius: 5px;
-  box-shadow: 0 5px #666;
+  box-shadow: 0 5px #8fae93;
   transition: 0.2s;
 }
 .mas__descargar__cv:hover {
   color: white;
   cursor: pointer;
-  background: linear-gradient(0deg, #61714d, #cbdfac);
+  background: linear-gradient(0deg, #61714d, #8fae93);
 }
 .mas__descargar__cv:hover:active {
   transform: translateY(2px);

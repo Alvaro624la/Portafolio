@@ -2,15 +2,15 @@
 @mixin p-btns{
     width: 150px;
     height: 40px;
-    background: $red;
+    background: $verde;
     border: 0px black solid;
     margin: 0px 20px;
     font-family: 'Josefin Slab', serif, Helvetica, Arial;
     font-size: 1.25em;
     font-weight: 600;
-    border: 1px solid black;
+    // border: 1px solid black;
     border-radius: 5px;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 5px $verde-flojo;
     transition: 0.2s;
 }
 
@@ -20,6 +20,7 @@
     top: 50px;
     right: 50px;
     background-color: orange;
+    background-color: $oro;
     width: 60px;
     height: 60px;
     transform: rotate(45deg);
