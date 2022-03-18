@@ -4041,9 +4041,18 @@
   margin-top: 60px;
   padding: 0px 100px;
   width: auto;
-  height: 600px;
+  height: 500px;
+}
+.habilidades .accordion, .habilidades .accordion-flush {
+  border: 1px solid #dfaf5e;
+}
+.habilidades .accordion-item {
+  background-color: rgba(97, 113, 77, 0.267);
+  border: 1px solid #dfaf5e;
 }
 .habilidades .accordion-button {
+  transition: filter 1s;
+  background: linear-gradient(90deg, #c2a887, rgba(223, 175, 93, 0.267));
   display: flex;
   justify-content: center;
   border: #dfaf5e 1px solid;
@@ -4052,6 +4061,11 @@
   padding: 0;
   margin: 0;
   font-weight: 700;
+}
+.habilidades .accordion-button:not(.collapsed) {
+  color: black;
+  filter: drop-shadow(6px 6px 10px black);
+  transition: 1s;
 }
 .habilidades .accordion-collapse, .habilidades .show {
   display: flex;
@@ -4081,6 +4095,7 @@
 .habilidades .accordion-body__code__bar__color--bem {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 75%;
 }
@@ -4097,6 +4112,7 @@
 .habilidades .accordion-body__code__bar__color--sass {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 75%;
 }
@@ -4113,6 +4129,7 @@
 .habilidades .accordion-body__code__bar__color--bootstrap {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 25%;
 }
@@ -4129,6 +4146,7 @@
 .habilidades .accordion-body__code__bar__color--animate {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 100%;
 }
@@ -4145,6 +4163,7 @@
 .habilidades .accordion-body__code__bar__color--babel {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 50%;
 }
@@ -4161,10 +4180,45 @@
 .habilidades .accordion-body__code__bar__color--webpack {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 50%;
 }
 .habilidades .accordion-body__code__bar__color--webpack:hover {
+  animation-name: resaltar;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+.habilidades .accordion-body__code__bar__color--gitbash {
+  background-color: green;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 0;
+  width: 50%;
+}
+.habilidades .accordion-body__code__bar__color--gitbash:hover {
+  animation-name: resaltar;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+.habilidades .accordion-body__code__bar__color--npm {
+  background-color: green;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 0;
+  width: 35%;
+}
+.habilidades .accordion-body__code__bar__color--npm:hover {
   animation-name: resaltar;
   animation-duration: 0.3s;
   animation-iteration-count: 2;
@@ -4281,6 +4335,7 @@
 .mas__idiomas__castellano__bar__color {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 100%;
 }
@@ -4310,6 +4365,7 @@
 .mas__idiomas__catalan__bar__color {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 100%;
 }
@@ -4339,6 +4395,7 @@
 .mas__idiomas__ingles__bar__color {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 50%;
 }
@@ -4371,6 +4428,7 @@
 .mas__programas__photoshop__bar__color {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 40%;
 }
@@ -4400,6 +4458,7 @@
 .mas__programas__premiere__bar__color {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 30%;
 }
@@ -4429,6 +4488,7 @@
 .mas__programas__illustrator__bar__color {
   background-color: green;
   height: 100%;
+  border-radius: 20px;
   z-index: 0;
   width: 15%;
 }
@@ -4680,30 +4740,6 @@
     top: 70px;
     right: 20px;
   }
-  .habilidades__html {
-    padding: 20px 0px;
-    margin: 0px 20px;
-  }
-  .habilidades__html__div1 {
-    padding: 10px;
-  }
-  .habilidades__html__div2 {
-    margin-right: 40px;
-  }
-  .habilidades__css {
-    padding: 20px 0px;
-    margin: 0px 20px;
-  }
-  .habilidades__css__div1 {
-    padding: 10px;
-  }
-  .habilidades__js {
-    padding: 20px 0px;
-    margin: 0px 20px;
-  }
-  .habilidades__js__div1 {
-    padding: 10px;
-  }
   .habilidades__certificaciones {
     color: white;
     padding: 20px;
@@ -4732,9 +4768,27 @@
     height: 100%;
   }
 }
-/*hasta dispositivos de 320px*/
+/*hasta dispositivos de 340px*/
+@media (max-width: 340px) {
+  .accordion-container {
+    font-size: 0.9em;
+  }
+}
+/*hasta dispositivos de 314px*/
+@media (max-width: 314px) {
+  .accordion-container {
+    font-size: 0.7em;
+  }
+}
+/*hasta dispositivos de 294px*/
+@media (max-width: 294px) {
+  .accordion-container {
+    font-size: 0.6em;
+  }
+}
 /*header horizontal boton modal*/
-@media (max-height: 560px) {
+/*personal links static header horizontal*/
+@media (max-height: 618px) {
   .header {
     height: 100%;
   }
@@ -4742,12 +4796,6 @@
     position: static;
     padding: 25px;
     transform: translate(0%, 0%);
-  }
-}
-/*personal links static header horizontal*/
-@media (max-height: 500px) {
-  .header {
-    height: 100%;
   }
   .header__personal-links {
     position: static;
