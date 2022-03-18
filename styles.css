@@ -3746,6 +3746,7 @@
   width: 150px;
   height: 40px;
   background: #61714d;
+  background: linear-gradient(135deg, #61714d, rgba(143, 174, 147, 0.85));
   border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
@@ -3760,7 +3761,9 @@
   animation-duration: 2s;
 }
 .header__p-btns__proyectos:hover {
-  background: linear-gradient(0deg, #61714d, #8fae93);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 20px #61714d);
+  background: linear-gradient(0deg, #61714d, #61714d);
 }
 .header__p-btns__proyectos:active {
   transform: translateY(2px);
@@ -3770,6 +3773,7 @@
   width: 150px;
   height: 40px;
   background: #61714d;
+  background: linear-gradient(135deg, #61714d, rgba(143, 174, 147, 0.85));
   border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
@@ -3784,7 +3788,9 @@
   animation-duration: 2s;
 }
 .header__p-btns__cv:hover {
-  background: linear-gradient(0deg, #61714d, #8fae93);
+  cursor: pointer;
+  filter: drop-shadow(0px 0px 20px #61714d);
+  background: linear-gradient(0deg, #61714d, #61714d);
 }
 .header__p-btns__cv:active {
   transform: translateY(2px);
@@ -3798,7 +3804,7 @@
 .header__s-btns__yo {
   width: 100px;
   height: 100px;
-  background-color: rgba(97, 113, 77, 0.267);
+  background-color: rgba(143, 174, 147, 0.4);
   border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
@@ -4097,7 +4103,7 @@
   height: 100%;
   border-radius: 20px;
   z-index: 0;
-  width: 75%;
+  width: 100%;
 }
 .habilidades .accordion-body__code__bar__color--bem:hover {
   animation-name: resaltar;
@@ -4131,7 +4137,7 @@
   height: 100%;
   border-radius: 20px;
   z-index: 0;
-  width: 25%;
+  width: 35%;
 }
 .habilidades .accordion-body__code__bar__color--bootstrap:hover {
   animation-name: resaltar;
@@ -4165,7 +4171,7 @@
   height: 100%;
   border-radius: 20px;
   z-index: 0;
-  width: 50%;
+  width: 40%;
 }
 .habilidades .accordion-body__code__bar__color--babel:hover {
   animation-name: resaltar;
@@ -4216,7 +4222,7 @@
   height: 100%;
   border-radius: 20px;
   z-index: 0;
-  width: 35%;
+  width: 25%;
 }
 .habilidades .accordion-body__code__bar__color--npm:hover {
   animation-name: resaltar;
@@ -4507,13 +4513,11 @@
   place-content: center;
 }
 .mas__descargar__cv {
-  display: grid;
-  place-content: center;
-  color: white;
-  text-decoration: none;
-  width: 165px;
-  height: 45px;
+  width: 150px;
+  height: 40px;
   background: #61714d;
+  background: linear-gradient(135deg, #61714d, rgba(143, 174, 147, 0.85));
+  border: 0px black solid;
   margin: 0px 20px;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
   font-size: 1.25em;
@@ -4521,15 +4525,25 @@
   border-radius: 5px;
   box-shadow: 0 5px #8fae93;
   transition: 0.2s;
+  display: grid;
+  place-content: center;
+  color: white;
+  text-decoration: none;
+  width: 165px;
+  height: 45px;
 }
 .mas__descargar__cv:hover {
-  color: white;
   cursor: pointer;
-  background: linear-gradient(0deg, #61714d, #8fae93);
+  filter: drop-shadow(0px 0px 20px #61714d);
+  background: linear-gradient(0deg, #61714d, #61714d);
 }
-.mas__descargar__cv:hover:active {
+.mas__descargar__cv:active {
   transform: translateY(2px);
   box-shadow: 0 3px #666;
+}
+.mas__descargar__cv:hover {
+  color: #fff;
+  filter: drop-shadow(0px 0px 5px #61714d);
 }
 
 .mas-grid {

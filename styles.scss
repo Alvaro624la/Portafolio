@@ -63,14 +63,6 @@
         name: bounceInLeft;
         duration: 2s;
       }
-
-      &:hover{
-        background: $header-p-btns-color-hover;
-      }
-      &:active{
-        transform: translateY(2px);
-        box-shadow: 0 3px #666;
-      }
     }
     &__cv{
       @include p-btns();
@@ -79,15 +71,6 @@
       animation:{
         name: bounceInRight;
         duration: 2s;
-      }
-
-      &:hover{
-       
-        background: $header-p-btns-color-hover;
-      }
-      &:active{
-        transform: translateY(2px);
-        box-shadow: 0 3px #666;
       }
     }
   }
@@ -99,7 +82,7 @@
     &__yo{
       width: 100px;
       height: 100px;
-      background-color: $verde-bg;
+      background-color: $verde-flojo-bg;
       border: 0px black solid;
       margin: 0px 20px;
       font-family: 'Josefin Slab', serif, Helvetica, Arial;
@@ -407,7 +390,7 @@
   
           &__color--bem{
             @include bar-color();
-            width: 75%;
+            width: 100%;
           }
           &__color--sass{
             @include bar-color();
@@ -415,7 +398,7 @@
           }
           &__color--bootstrap{
             @include bar-color();
-            width: 25%;
+            width: 35%;
           }
           &__color--animate{
             @include bar-color();
@@ -423,7 +406,7 @@
           }
           &__color--babel{
             @include bar-color();
-            width: 50%;
+            width: 40%;
           }
           &__color--webpack{
             @include bar-color();
@@ -435,7 +418,7 @@
           }
           &__color--npm{
             @include bar-color();
-            width: 35%;
+            width: 25%;
           }
         }
       }
@@ -649,31 +632,18 @@
     place-content: center;
 
     &__cv{
+    @include p-btns;
     display: grid;
     place-content: center;
     color: white;
     text-decoration: none;
-    // border: 1px solid white;
     width: 165px;
     height: 45px;
-    background: $verde;
-    margin: 0px 20px;
-    font-family: 'Josefin Slab', serif, Helvetica, Arial;
-    font-size: 1.25em;
-    font-weight: 600;
-    border-radius: 5px;
-    box-shadow: 0 5px $verde-flojo;
-    transition: 0.2s;
+    // border: 1px solid white;
 
     &:hover{
-      color: white;
-      cursor: pointer;
-      background: $header-p-btns-color-hover;
-     
-      &:active{
-        transform: translateY(2px);
-        box-shadow: 0 3px #666;
-      }
+      color: #fff;
+      filter: drop-shadow(0px 0px 5px $verde);
     }
     }
   }
