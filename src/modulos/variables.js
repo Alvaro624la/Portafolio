@@ -1,0 +1,1 @@
+export const UPBTN = document.getElementById('scroll-up-btn');
