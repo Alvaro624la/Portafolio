@@ -14,6 +14,7 @@
   overflow-x: hidden; // animatecss-quitar barra debajo animacion inicio
   background-color: black; //animatecss-animacion inicio bg negro
   font-family: 'Josefin Slab', serif, Helvetica, Arial;
+  scroll-behavior: smooth;
   // font-size: ;
 }
 
@@ -735,10 +736,9 @@
   border-radius: 50%;
   bottom: 20px;
   right: 20px;
-  transition: right .4s;
   // sombra:
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0); 
-  transition: box-shadow .2s;
+  transition: all .4s;
   &:hover{
     box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.6);
     transform: scale(1.01);
@@ -774,7 +774,7 @@
 }
 .scroll-up-out{
   right: -100px;
-  transition: all 0.4s;
+  transition: all .4s ease-in;
 }
 
 

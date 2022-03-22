@@ -3704,6 +3704,7 @@
   overflow-x: hidden;
   background-color: black;
   font-family: "Josefin Slab", serif, Helvetica, Arial;
+  scroll-behavior: smooth;
 }
 
 /*HEADER*/
@@ -4618,9 +4619,8 @@
   border-radius: 50%;
   bottom: 20px;
   right: 20px;
-  transition: right 0.4s;
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-  transition: box-shadow 0.2s;
+  transition: all 0.4s;
 }
 .scroll-up:hover {
   box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.6);
@@ -4656,7 +4656,7 @@
 
 .scroll-up-out {
   right: -100px;
-  transition: all 0.4s;
+  transition: all 0.4s ease-in;
 }
 
 @media (max-width: 992px) {
