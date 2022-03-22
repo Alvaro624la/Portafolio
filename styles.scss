@@ -735,10 +735,10 @@
   border: 5px solid $oro;
   border-radius: 50%;
   bottom: 20px;
-  right: 20px;
+  right: -100px;
   // sombra:
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0); 
-  transition: all .4s;
+  transition: all .4s ease-in;
   &:hover{
     box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.6);
     transform: scale(1.01);
@@ -772,9 +772,9 @@
     border-color: transparent transparent $oro;
   }
 }
-.scroll-up-out{
-  right: -100px;
-  transition: all .4s ease-in;
+.scroll-up-in{
+  right: 20px;
+  transition: all .4s;
 }
 
 

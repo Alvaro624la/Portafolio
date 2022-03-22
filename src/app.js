@@ -13,12 +13,12 @@ function subir(){
 // Ver posicion del scroll para aparecer UPBTN (posicion 1000 aparecer)
 window.addEventListener('scroll', scroll);
 function scroll(){
-    console.log(scrollY);
-    if(scrollY <= 999){
-        UPBTN.classList.add('scroll-up-out');
+    // console.log(scrollY);
+    if(window.scrollY > 1000){
+        UPBTN.classList.add('scroll-up-in');
         // UPBTN.style.display = 'none';
     } else {
-        UPBTN.classList.remove('scroll-up-out');
+        UPBTN.classList.remove('scroll-up-in');
         // UPBTN.style.display = 'block';
     }
 }
