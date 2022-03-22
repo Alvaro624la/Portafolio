@@ -4623,8 +4623,8 @@
   transition: box-shadow 0.2s;
 }
 .scroll-up:hover {
-  box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.6);
-  transform: scale(1.1);
+  box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.6);
+  transform: scale(1.01);
   transition: all 0.2s;
 }
 .scroll-up:active {
@@ -4834,11 +4834,24 @@
   .proyectos {
     height: 100%;
   }
+  .proyectos__grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 /*hasta dispositivos de 340px*/
 @media (max-width: 340px) {
   .accordion-container {
     font-size: 0.9em;
+  }
+
+  /*PROYECTOS*/
+  .proyectos {
+    height: 100%;
+  }
+  .proyectos__grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
   }
 }
 /*hasta dispositivos de 314px*/

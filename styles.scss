@@ -740,8 +740,8 @@
   box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.0); 
   transition: box-shadow .2s;
   &:hover{
-    box-shadow: 10px 10px 12px 4px rgba(0, 0, 0, 0.6);
-    transform: scale(1.1);
+    box-shadow: 10px 10px 6px 0px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
     transition: all .2s;
   }
   &:active{
@@ -973,6 +973,11 @@
   /*PROYECTOS*/
   .proyectos{
     height: 100%;
+
+    &__grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    }
   }
 }
 /*hasta dispositivos de 340px*/
@@ -980,6 +985,15 @@
   // CONTENIDO BOOTSTRAP
   .accordion-container{
     font-size: 0.9em;
+  }
+  /*PROYECTOS*/
+  .proyectos{
+    height: 100%;
+
+    &__grid{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
   }
 }
 /*hasta dispositivos de 314px*/
