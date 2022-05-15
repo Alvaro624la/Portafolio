@@ -1,5 +1,5 @@
 # Portfolio
-ES - Aquí es donde muestro todos mis conocimientos sobre maquetacion y programacion Front-End.
+ES - Aquí es donde muestro todos mis conocimientos sobre maquetación y programación Front-End.
 <!-- EN - This is where I show all my knowledge about layout and Front-End programming. -->
 
 ## Content
