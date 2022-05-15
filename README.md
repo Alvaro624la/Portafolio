@@ -1,9 +1,9 @@
 # Portfolio
-Making attractive and usable readme's. 
-This is a short description about the content of my project. This text have to be simple and explicit.
+ES - Aquí es donde muestro todos mis conocimientos sobre maquetacion y programacion Front-End.
+EN - This is where I show all my knowledge about layout and Front-End programming.
 
 ## Content
-This project has one unique branch.
+This project has two branches: main and v.1-colors. **main** contains the tests of the repositories and **v.1-colors** contains the other style ideas for the same project.
 
 ## Demo
 If you want to see the demo of this project deployed, you can visit [Demo of the project](https://c5ljgu.csb.app/)
