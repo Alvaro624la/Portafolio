@@ -26,4 +26,4 @@ npm run build & npm run build-sass
 ## Preview
 ![](/preview.jpg)
 
-### Notes
+```### Notes```
