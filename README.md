@@ -1,6 +1,6 @@
 # Portfolio
 ES - Aquí es donde muestro todos mis conocimientos sobre maquetacion y programacion Front-End.
-EN - This is where I show all my knowledge about layout and Front-End programming.
+<!-- EN - This is where I show all my knowledge about layout and Front-End programming. -->
 
 ## Content
 This project has two branches: main and v.1-colors. **main** contains the tests of the repositories and **v.1-colors** contains the other style ideas for the same project.
@@ -26,4 +26,4 @@ npm run build & npm run build-sass
 ## Preview
 ![](/preview.jpg)
 
-```### Notes```
+<!-- ### Notes -->
