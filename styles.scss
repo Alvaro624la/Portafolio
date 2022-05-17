@@ -423,6 +423,10 @@
           }
           &__color--wpbakery{
             @include bar-color();
+            width: 45%;
+          }
+          &__color--slider-rev6{
+            @include bar-color();
             width: 50%;
           }
         }

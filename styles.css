@@ -4240,9 +4240,26 @@
   height: 100%;
   border-radius: 20px;
   z-index: 0;
-  width: 50%;
+  width: 45%;
 }
 .habilidades .accordion-body__code__bar__color--wpbakery:hover {
+  animation-name: resaltar;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+@keyframes resaltar {
+  50% {
+    background-color: #558d55;
+  }
+}
+.habilidades .accordion-body__code__bar__color--slider-rev6 {
+  background-color: green;
+  height: 100%;
+  border-radius: 20px;
+  z-index: 0;
+  width: 50%;
+}
+.habilidades .accordion-body__code__bar__color--slider-rev6:hover {
   animation-name: resaltar;
   animation-duration: 0.3s;
   animation-iteration-count: 2;
