@@ -3711,10 +3711,10 @@
 .header {
   position: relative;
   background-color: black;
-  background-image: url("/src/img/headerbg4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: url("./src/img/headerbg4.jpg");
   width: 100%;
   height: 100vh;
   display: grid;
@@ -3878,7 +3878,7 @@
   transform: translate(-50%, -50%);
   padding: 1.5em;
   background-color: white;
-  background-image: url("/src/img/modalbg1.jpg");
+  background: url("/src/img/modalbg1.jpg");
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -3993,10 +3993,10 @@
 /*HABILIDADES*/
 .habilidades {
   background-color: white;
-  background-image: url("/src/img/bg14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: url("/src/img/bg14.jpg");
   cursor: default;
   position: relative;
   height: 100%;
@@ -4113,7 +4113,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--sass {
@@ -4130,7 +4130,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--bootstrap {
@@ -4147,7 +4147,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--animate {
@@ -4164,7 +4164,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--babel {
@@ -4181,7 +4181,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--webpack {
@@ -4198,7 +4198,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--gitbash {
@@ -4215,7 +4215,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--npm {
@@ -4232,7 +4232,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--wpbakery {
@@ -4249,7 +4249,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--slider-rev6 {
@@ -4266,17 +4266,17 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades__certificaciones {
   background-color: rgba(187, 187, 187, 0.8);
-  background-image: url("/src/img/headerbg8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: url("/src/img/headerbg8.jpg");
   background-blend-mode: difference;
-  color: white;
+  color: #fff;
   padding: 20px;
   margin: 50px 250px;
   text-align: center;
@@ -4292,10 +4292,10 @@
 
 .mas {
   background-color: white;
-  background-image: url("/src/img/headerbg8.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background-image: url("/src/img/headerbg8.jpg");
   background-blend-mode: difference;
   color: black;
   color: white;
@@ -4387,7 +4387,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__idiomas__catalan {
@@ -4417,7 +4417,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__idiomas__ingles {
@@ -4447,7 +4447,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__programas {
@@ -4480,7 +4480,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__programas__premiere {
@@ -4510,7 +4510,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__programas__illustrator {
@@ -4540,7 +4540,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__descargar {
@@ -4595,19 +4595,17 @@
   padding: 20px 0px 10px 0px;
   margin: 0;
   background-color: black;
-  background-image: url("/src/img/headerbg8.jpg");
-  background-image: url("/src/img/bg14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: url("/src/img/bg14.jpg");
 }
 .proyectos__grid {
   background-color: black;
-  background-image: url("/src/img/headerbg8.jpg");
-  background-image: url("/src/img/bg14.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  background: url("/src/img/bg14.jpg");
   font-size: 1.25em;
   display: flex;
   flex-flow: row wrap;

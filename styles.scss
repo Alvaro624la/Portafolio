@@ -23,11 +23,12 @@
   position: relative;
   background:{
     color: black;
-    image: url('./src/img/headerbg4.jpg');
+    // image: url('./src/img/headerbg4.jpg');
     size: cover;
     repeat: no-repeat;
     attachment: fixed;
   }
+  background: url('./src/img/headerbg4.jpg');
   width: 100%;
   height: 100vh;
   display: grid;
@@ -167,7 +168,7 @@
     transform: translate(-50%, -50%);
     padding: 1.5em;
     background-color: white;
-    background-image: url('/src/img/modalbg1.jpg');
+    background: url('/src/img/modalbg1.jpg');
     // filter: brightness(1.1);
     display: flex;
     flex-direction: row;
@@ -298,11 +299,12 @@
 .habilidades{
   background:{
     color: white;
-    image: url('/src/img/bg14.jpg');
+    // image: url('/src/img/bg14.jpg');
     size: cover;
     repeat: no-repeat;
     attachment: fixed;
   }
+  background: url('/src/img/bg14.jpg');
   cursor: default;
   position: relative;
   height: 100%;
@@ -436,14 +438,15 @@
   &__certificaciones{
     background:{
       color: rgba(187, 187, 187, 0.8);
-      image: url('/src/img/headerbg8.jpg');
-      // image: url('/src/img/bg2.png');
       size: cover;
       repeat: no-repeat;
       attachment: fixed;
-      blend-mode: difference;
+      // blend-mode: difference;
     }
-    color: white;
+    background: url('/src/img/headerbg8.jpg');
+    background-blend-mode: difference;
+    // filter: invert(1);
+    color: #fff;
     padding: 20px;
     margin: 50px 250px;
     text-align: center;
@@ -467,13 +470,15 @@
 .mas{
   background:{
     color: white;
-    image: url('/src/img/headerbg8.jpg');
+    // image: url('/src/img/headerbg8.jpg');
     // image: url('/src/img/bg2.png');
     size: cover;
     repeat: no-repeat;
     attachment: fixed;
-    blend-mode: difference;
+    // blend-mode: difference;
   }
+  background-image: url('/src/img/headerbg8.jpg');
+  background-blend-mode: difference;
   // background-blend-mode: exclusion;
   color: black; //fallback
   color: white;
@@ -678,23 +683,25 @@
     margin: 0;
     background:{
       color: black;
-      image: url('/src/img/headerbg8.jpg');
-      image: url('/src/img/bg14.jpg');
+      // image: url('/src/img/headerbg8.jpg');
+      // image: url('/src/img/bg14.jpg');
       size: cover;
       repeat: no-repeat;
       attachment: fixed;
     }
+    background: url('/src/img/bg14.jpg');
   }
 
   &__grid{
   background:{
     color: black;
-    image: url('/src/img/headerbg8.jpg');
-    image: url('/src/img/bg14.jpg');
+    // image: url('/src/img/headerbg8.jpg');
+    // image: url('/src/img/bg14.jpg');
     size: cover;
     repeat: no-repeat;
     attachment: fixed;
   }
+  background: url('/src/img/bg14.jpg');
   font-size: $cards;
   display: flex;
   flex-flow: row wrap;
