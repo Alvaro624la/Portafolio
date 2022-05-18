@@ -297,13 +297,10 @@
 
 /*HABILIDADES*/
 .habilidades{
-  background:{
-    color: white;
-    // image: url('/src/img/bg14.jpg');
-    size: cover;
-    repeat: no-repeat;
-    attachment: fixed;
-  }
+  background-color: white;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   background: url('/src/img/bg14.jpg');
   cursor: default;
   position: relative;
