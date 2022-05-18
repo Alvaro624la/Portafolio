@@ -3992,11 +3992,11 @@
 
 /*HABILIDADES*/
 .habilidades {
-  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background: url("/src/img/bg14.jpg");
+  background-color: white;
   cursor: default;
   position: relative;
   height: 100%;
