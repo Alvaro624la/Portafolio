@@ -3878,7 +3878,7 @@
   transform: translate(-50%, -50%);
   padding: 1.5em;
   background-color: white;
-  background: url("/src/img/modalbg1.jpg");
+  background: url("https://raw.githubusercontent.com/Alvaro624la/Portfolio/main/src/img/modalbg1.jpg");
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
