@@ -455,10 +455,20 @@
 
     &__li{
       list-style-type: none;
-
       // &::before{
       //   content: "⤷ ";
       // }
+
+      &__a{
+        color: #fff;
+
+        &:hover{
+          color: rgb(179, 179, 179);
+        }
+        &:active{
+          color:  #0066CC;
+        }
+      }
     }
   }
 }
