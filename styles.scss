@@ -461,12 +461,26 @@
 
       &__a{
         color: #fff;
+        text-decoration: none;
 
         &:hover{
           color: rgb(179, 179, 179);
         }
         &:active{
           color:  #0066CC;
+        }
+        &__img{
+          width: 25px;
+          height: 25px;
+          text-decoration: none;
+          margin-bottom: 5px;
+  
+          &:hover{
+            opacity: 0.6;
+          }
+          &:active{
+            opacity: 0.9;
+          }
         }
       }
     }

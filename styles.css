@@ -123,7 +123,6 @@
     -webkit-animation-iteration-count: 1 !important;
     animation-iteration-count: 1 !important;
   }
-
   .animate__animated[class*=Out] {
     opacity: 0;
   }
@@ -4113,7 +4112,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--sass {
@@ -4130,7 +4129,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--bootstrap {
@@ -4147,7 +4146,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--animate {
@@ -4164,7 +4163,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--babel {
@@ -4181,7 +4180,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--webpack {
@@ -4198,7 +4197,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--gitbash {
@@ -4215,7 +4214,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--npm {
@@ -4232,7 +4231,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--wpbakery {
@@ -4249,7 +4248,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades .accordion-body__code__bar__color--slider-rev6 {
@@ -4266,7 +4265,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .habilidades__certificaciones {
@@ -4291,12 +4290,25 @@
 }
 .habilidades__certificaciones__li__a {
   color: #fff;
+  text-decoration: none;
 }
 .habilidades__certificaciones__li__a:hover {
-  color: #b3b3b3;
+  color: rgb(179, 179, 179);
 }
 .habilidades__certificaciones__li__a:active {
   color: #0066CC;
+}
+.habilidades__certificaciones__li__a__img {
+  width: 25px;
+  height: 25px;
+  text-decoration: none;
+  margin-bottom: 5px;
+}
+.habilidades__certificaciones__li__a__img:hover {
+  opacity: 0.6;
+}
+.habilidades__certificaciones__li__a__img:active {
+  opacity: 0.9;
 }
 
 .mas {
@@ -4396,7 +4408,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__idiomas__catalan {
@@ -4426,7 +4438,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__idiomas__ingles {
@@ -4456,7 +4468,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__programas {
@@ -4489,7 +4501,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__programas__premiere {
@@ -4519,7 +4531,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__programas__illustrator {
@@ -4549,7 +4561,7 @@
 }
 @keyframes resaltar {
   50% {
-    background-color: #558d55;
+    background-color: rgb(85, 141, 85);
   }
 }
 .mas__descargar {
@@ -4708,17 +4720,14 @@
     width: 600px;
     height: 500px;
   }
-
   /*HABILIDADES*/
   .habilidades__certificaciones {
     margin: 50px 150px;
   }
-
   /*MAS*/
   .mas {
     padding: 50px 0px 100px 0px;
   }
-
   /*PROYECTOS*/
 }
 @media (max-width: 768px) {
@@ -4727,7 +4736,6 @@
     bottom: 100px;
     left: 50px;
   }
-
   .modal-yo {
     /*modal contenido interior*/
   }
@@ -4745,7 +4753,6 @@
   .modal-yo__content__descripcion {
     height: auto;
   }
-
   /*HABILIDADES*/
   .habilidades__dev {
     top: 100px;
@@ -4754,12 +4761,10 @@
   .habilidades__certificaciones {
     margin: 50px 100px;
   }
-
   .mas__forma {
     top: 100px;
     right: 50px;
   }
-
   .proyectos {
     height: 100%;
   }
@@ -4791,7 +4796,6 @@
   .header__personal-links__linkedin__img, .header__personal-links__github__img {
     width: 30px;
   }
-
   .modal-yo {
     /*modal contenido interior*/
   }
@@ -4824,13 +4828,11 @@
   .modal-yo__content__descripcion {
     display: none;
   }
-
   /*separacion entre li (> *{} hijos de la clase padre ..._datos)*/
   .modal-yo__content__datos > * {
     margin: 0;
     padding: 0;
   }
-
   /*HABILIDADES*/
   .habilidades {
     padding: 20px 0px;
@@ -4851,7 +4853,6 @@
     text-align: unset;
     border-radius: 15px;
   }
-
   .mas {
     padding: 20px 0px;
   }
@@ -4866,7 +4867,6 @@
     padding: 30px 60px;
     margin: 0;
   }
-
   /*PROYECTOS*/
 }
 /*hasta dispositivos de 340px*/
@@ -4874,7 +4874,6 @@
   .accordion-container {
     font-size: 0.9em;
   }
-
   /*PROYECTOS*/
 }
 /*hasta dispositivos de 314px*/
