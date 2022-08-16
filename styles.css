@@ -3822,7 +3822,8 @@
   border: 16px groove #61714d;
   font-size: 1.1em;
   background-color: #8fae93;
-  transition: all 0.5s;
+  transform: rotate(360deg);
+  transition: all 0.4s;
 }
 .header__personal-links {
   position: absolute;
